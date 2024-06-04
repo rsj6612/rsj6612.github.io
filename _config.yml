@@ -113,8 +113,8 @@ comments:
     shortname: # fill with the Disqus shortname. › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
   # utterances settings › https://utteranc.es/
   utterances:
-    repo: #rsj6612/rsj6612.github.io
-    issue_term: #pathname
+    repo: rsj6612/rsj6612.github.io
+    issue_term: pathname
   giscus:
     repo: # <gh-username>/<repo>
     repo_id:
