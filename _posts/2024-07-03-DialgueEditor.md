@@ -20,10 +20,8 @@ rpg게임을 만들면서 npc와 대화하는 기능을 만드는데 코드로 �
 ![1](./assets/img/postsImg/703/1.png)
 우선 캔버스가 있기 때문에 메인 캔버스 아래로 ConversationManager 오브젝트를 넣었다.  화면 가운데에 대화창이 생긴 것을 볼 수 있다. 저곳에 이제 만드는 대화들이 들어간다. 적절한 위치에 둔다.
 
-![2](./assets/img/postsImg/703/2.png)
-
-
-![3](./assets/img/postsImg/703/3.png)
+![2](./assets/img/postsImg/703/2.png){ width=50% }
+![3](./assets/img/postsImg/703/3.png){ width=50% }
 
 빈 게임오브젝트를 만들어 이곳에 NPCConversation 스크립트를 넣는다. 다운받은 에셋에 있다.
 
@@ -36,7 +34,7 @@ rpg게임을 만들면서 npc와 대화하는 기능을 만드는데 코드로 �
 ![6](./assets/img/postsImg/703/6.png)
 이런 식으로 NPC의 이름, 대화 내용, 왼쪽에 아이콘, 음성, 폰트 등을 설정할 수가 있다. 근데 NPC의 이름은 한글이 안되는 듯하다.
 
-![7](./assets/img/postsImg/703/7.png)
+![7](./assets/img/postsImg/703/7.png){ width=50% }
 
 나는 이런 식으로 설정하였다. 초록색으로 이어진 것은 가운데 창을 우클릭하면 Create Option이라는 것이 있는데, 대화의 선택지를 만드는 것이다.
 
@@ -65,8 +63,8 @@ private void OnTriggerStay(Collider Other) {
 
 
 ## 결과
-![8](./assets/img/postsImg/703/8.png)
-![9](./assets/img/postsImg/703/9.png)
+![8](./assets/img/postsImg/703/8.png){ width=50% }
+![9](./assets/img/postsImg/703/9.png){ width=50% }
 
 트리거에 닿으면 G키를 누르라는 안내 문구와 함께 누르면 내가 아까 설정하고 만들었던 선택지를 가진 대화창이 나온 것을 볼 수 있다.
 
