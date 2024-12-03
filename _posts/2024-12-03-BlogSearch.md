@@ -28,6 +28,7 @@ tags:
 
 그리고 html 파일을 다운받는데 이 파일을 내 깃허브 블로그 root 위치에 추가해주고 커밋, 푸쉬를 하면 1~2분 정도 뒤에 소유권 인정이 된다.
 
+![1](./assets/img/postsImg/20241203/googlesearch4.png)
 
 
 ---
