@@ -72,7 +72,7 @@ sitemap.xml을 root에 만들고 복사 붙여넣기 한다. sitemap.xml을 통�
 ```
 User-agent: *
 Allow: /
-Sitemap: https://rsj6612.github.io/
+Sitemap: https://rsj6612.github.io/sitemap.xml
 ```
 robots.txt또한 root에 똑같이 만들어 추가한다. 
 
