@@ -21,9 +21,10 @@ rpg게임을 만들면서 npc와 대화하는 기능을 만드는데 코드로 �
 우선 캔버스가 있기 때문에 메인 캔버스 아래로 ConversationManager 오브젝트를 넣었다.  화면 가운데에 대화창이 생긴 것을 볼 수 있다. 저곳에 이제 만드는 대화들이 들어간다. 적절한 위치에 둔다.
 
 ![2](./assets/img/postsImg/20240703/2.png)
+
 ![3](./assets/img/postsImg/20240703/3.png)
 
-빈 게임오브젝트를 만들어 이곳에 NPCConversation 스크립트를 넣는다. 다운받은 에셋에 있다.
+빈 게임오브젝트를 만들어 다운받은 에셋에서 NPCConversation 스크립트를 넣는다. 
 
 ![4](./assets/img/postsImg/20240703/4.png)
 그리고 Window -> Dialgue Editor 탭을 열면 이러한 화면이 나온다. 처음에 오른쪽에 있는 설정들은. 디폴트 설정값으로 설정해두면 만들 때 디폴트로 설정값들이 들어간다.

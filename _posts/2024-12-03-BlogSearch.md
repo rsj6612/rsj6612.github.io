@@ -31,6 +31,50 @@ tags:
 ![1](./assets/img/postsImg/20241203/googlesearch4.png)
 
 
+
+## sitemap.xml, robots.txt 추가하기
+```
+---
+layout: null
 ---
 
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+        xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    {% for post in site.posts %}
+    <url>
+        <loc>{{ site.url }}{{ post.url }}</loc>
+        {% if post.lastmod == null %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% endif %}
 
+        {% if post.sitemap.changefreq == null %}
+        <changefreq>weekly</changefreq>
+        {% else %}
+        <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+        {% endif %}
+
+        {% if post.sitemap.priority == null %}
+        <priority>0.5</priority>
+        {% else %}
+        <priority>{{ post.sitemap.priority }}</priority>
+        {% endif %}
+
+    </url>
+    {% endfor %}
+</urlset> 
+```
+sitemap.xml을 root에 만들고 복사 붙여넣기 한다. sitemap.xml을 통해 Google 크롤러가 url을 체크할 수 있게된다. 아까 구글 서치 콘솔에서 속성 -> Sitemaps에 추가해 알 수 있다.
+
+```
+User-agent: *
+Allow: /
+Sitemap: https://rsj6612.github.io/
+```
+robots.txt또한 root에 똑같이 만들어 추가한다. 
+
+접근하는 크롤러는 robots.txt를 보고 접근하고자 하는 sitemap의 위치를 확인하고,
+제한을 확인하여 본래의 웹사이트로 가져가게 된다.
